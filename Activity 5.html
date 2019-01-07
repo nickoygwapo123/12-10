@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ben Justin Montes</title>
+</head>
+<body style="text-align:center">
+	<h1>Coffee Vendo</h1>
+	<br><br>
+	<label>Amount:</label>
+	<input type="text" id="payment">
+	<input type="button" value="350ml" onclick="cat1()">
+	<input type="button" value="450ml" onclick="cat2()">
+	<input type="button" value="750ml" onclick="cat3()">
+	<script type="text/javascript">
+		function cat3()
+		{
+			var pay=Number(document.getElementById('payment').value);
+			var money;
+			if (isNaN(pay))
+			{
+				alert("Invalid")
+			}
+			else
+			{
+				if (pay>=50)
+				{
+					money=pay-50
+					alert("ENJOY YOUR COFFEE , " + "Changed amount:" + money)
+				}
+				else
+				{
+					alert("Insufficient Amount")
+				}
+			}
+		}
+		function cat2()
+		{
+			var pay=Number(document.getElementById('payment').value);
+			var money;
+			if (isNaN(pay))
+			{
+				alert("Invalid")
+			}
+			else
+			{
+				if (pay>=30)
+				{
+					money=pay-30
+					alert("ENJOY YOUR COFFEE ," + "Changed amount: " + money)
+				}
+				else
+				{
+					alert("Insufficient Amount")
+				}
+			}
+		}
+		function cat1()
+		{
+			var pay=Number(document.getElementById('payment').value);
+			var money;
+			if (isNaN(pay))
+			{
+				alert("Invalid")
+			}
+			else
+			{
+				if (pay>=25)
+				{
+					money=pay-25
+					alert("ENJOY YOUR COFFEE , " + "Changed amount:" + money)
+				}
+				else
+				{
+					alert("Insufficient Amount")
+				}
+			}
+		}
+	</script>
+</body>
+</html>

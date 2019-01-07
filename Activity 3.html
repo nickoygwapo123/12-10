@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ben Justin Montes</title>
+</head>
+<body>
+	<label>Enter Grade:</label>
+	<input type="text" id="grade">
+	<input type="button" value="GO" onclick="Grade()">
+	<h3 id="grades"></h3>
+	<script type="text/javascript">
+		function Grade()
+		{
+			var category = Number(document.getElementById("grade").value);
+			if (isNaN(category)==false)
+			{
+				alert("Invalid!!!")
+			}
+			else if (category>=95 && value1<=100)
+			{
+				document.getElementById('grades').innerHTML="Excellent";
+			}
+			else if (category>=85)
+			{
+				document.getElementById('grades').innerHTML="Very Good";
+			}
+			else if (category>=80)
+			{
+				document.getElementById('grades').innerHTML="Good";
+			}
+			else if (category>=75)
+			{
+				document.getElementById('grades').innerHTML="Nice";
+			}
+			else if (category>=65)
+			{
+				document.getElementById('grades').innerHTML="Poor";
+			}
+			else
+			{
+				alert("Invalid!")
+			}
+		}
+	</script>
+</body>
+</html>
